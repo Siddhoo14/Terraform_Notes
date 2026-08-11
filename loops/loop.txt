@@ -1,0 +1,11 @@
+Loops types: 
+For Loop 
+Do while Loop
+while Loop
+Nested Loop
+for_each Loop
+
+
+Functions:
+Length() => yeh humari di gai hui list ki lenght nikalta hai.
+toset() => Diye hue list ko set main convert kar deta hai taaki koi duplicate values naa saake aur humara code run hojaaye

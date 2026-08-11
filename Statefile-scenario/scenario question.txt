@@ -1,0 +1,64 @@
+Terraform State File Interview Scenarios (Questions Only):
+
+1. What happens if the Terraform state file gets deleted accidentally?
+Ans -> First of all we have to take care of state file  we can let him delete so we have to store it in remote backend but if also it get delete so if we have stored any snapshot of state file we can recover from there or secondly if we have taken any backup of state file so we can reover from there if both the options doesn't work we have to add all the resources in the state file one by one by using resoure id and terraform command terraform import.
+
+2. How would you recover infrastructure if the state file is lost and no backup exists?
+Ans -> We have to add all the resources in the state file one by one by using resoure id and terraform command terraform import
+
+3. Two engineers run `terraform apply` at the same time. What could happen and how would you prevent it?
+Ans -> So if the two user hit terraform apply at a same time  so the request which is camed first to the remote backend and it get state acquire that person's terraform apply will work and another's will give an error and say to get acquire the state lock first.
+
+4. A resource is deleted manually from the Azure Portal but still exists in the Terraform state. What will happen during the next `terraform plan`?
+
+5. An Azure resource already exists, and you want Terraform to manage it. How would you handle this?
+
+6. How would you migrate a local state file to a remote backend?
+
+7. What is state locking and why is it important?
+
+8. How do you manage Terraform state for multiple environments such as Dev, QA, and Prod?
+
+9. What is infrastructure drift? How does Terraform detect it?
+
+10. A resource block is renamed in the code. What impact will it have on the state file?
+
+11. How would you move a resource from one state file to another?
+
+12. How would you remove a resource from Terraform state without deleting the actual resource?
+
+13. What information is stored inside a Terraform state file?
+
+14. Why should Terraform state files not be stored in Git repositories?
+
+15. How do you secure sensitive data present in Terraform state files?
+
+16. What is the difference between local state and remote state?
+
+17. How would you share Terraform state between multiple teams?
+
+18. How can one Terraform configuration access outputs from another Terraform state?
+
+19. What happens if the state file becomes corrupted?
+
+20. How do you handle state file versioning and backups in production?
+
+21. What challenges can arise when multiple workspaces share the same backend?
+
+22. What is the purpose of the `terraform refresh` command?
+
+23. How would you migrate resources between Terraform modules while preserving state?
+
+24. What happens if someone manually edits the Terraform state file?
+
+25. How do you troubleshoot a "state lock" issue during deployment?
+
+26. How would you perform disaster recovery for a Terraform backend?
+
+27. What are the best practices for managing Terraform state in enterprise environments?
+
+28. How do you audit who changed the Terraform state and when?
+
+29. What happens when the state file and actual infrastructure are out of sync?
+
+30. Explain a real-world incident where Terraform state management caused deployment issues and how you resolved it.

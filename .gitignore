@@ -1,0 +1,13 @@
+﻿# Draw.io temporary and backup files
+*.drawio.bkp
+*.drawio.dtmp
+
+# Terraform temporary/state files
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Terraform variable files (may contain secrets)
+*.tfvars.json
