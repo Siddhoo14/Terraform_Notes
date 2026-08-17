@@ -9,3 +9,8 @@ Execution of Commands
 
 terraform plan ---> terraform refresh + terraform plan
 terraform apply ---> terraform refresh + terraform plan + terraform apply
+
+
+terraform taint ---->
+terraform destroy --->
+terraform import ----> 
